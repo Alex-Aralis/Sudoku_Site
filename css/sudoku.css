@@ -30,34 +30,13 @@ div.sudoku-box-group-row{
 
 
 
-div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(odd) > div.sudoku-box-group-row:nth-child(odd) > div.sudoku-box:nth-child(odd){
-    background-color:darkorange;
-}
-
-div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(odd) > div.sudoku-box-group-row:nth-child(even) > div.sudoku-box:nth-child(even){
-    background-color:darkorange;
-}
-
-div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(even) > div.sudoku-box-group-row:nth-child(odd) > div.sudoku-box:nth-child(even){
-    background-color:darkorange;
-}
-
-div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(even) > div.sudoku-box-group-row:nth-child(even) > div.sudoku-box:nth-child(odd){
-    background-color:darkorange;
-}
-
-div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(odd) > div.sudoku-box-group-row:nth-child(odd) > div.sudoku-box:nth-child(even){
-    background-color:darkorange;
-}
-
-div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(odd) > div.sudoku-box-group-row:nth-child(even) > div.sudoku-box:nth-child(odd){
-    background-color:darkorange;
-}
-
-div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(even) > div.sudoku-box-group-row:nth-child(odd) > div.sudoku-box:nth-child(odd){
-    background-color:darkorange;
-}
-
+div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(odd) > div.sudoku-box-group-row:nth-child(odd) > div.sudoku-box:nth-child(odd),
+div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(odd) > div.sudoku-box-group-row:nth-child(even) > div.sudoku-box:nth-child(even),
+div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(even) > div.sudoku-box-group-row:nth-child(odd) > div.sudoku-box:nth-child(even),
+div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(even) > div.sudoku-box-group-row:nth-child(even) > div.sudoku-box:nth-child(odd),
+div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(odd) > div.sudoku-box-group-row:nth-child(odd) > div.sudoku-box:nth-child(even),
+div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(odd) > div.sudoku-box-group-row:nth-child(even) > div.sudoku-box:nth-child(odd),
+div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(even) > div.sudoku-box-group-row:nth-child(odd) > div.sudoku-box:nth-child(odd),
 div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(even) > div.sudoku-box-group-row:nth-child(even) > div.sudoku-box:nth-child(even){
     background-color:darkorange;
 }
