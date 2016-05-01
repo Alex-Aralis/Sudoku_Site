@@ -2,8 +2,14 @@ div.sudoku-container{
     display:flex;
     align-content:stretch;
     flex-wrap:wrap;
-    width:300px;
-    height:300px;
+    font-size:32px;
+    width:13em;
+    height:13em;
+    box-sizing:border-box;
+    border-width:2px;
+    border-style:solid;
+
+    box-shadow:5px 5px 5px grey;
 }
 
 div.sudoku-square-group-row{
@@ -12,15 +18,12 @@ div.sudoku-square-group-row{
 }
 
 div.sudoku-square-group{
+    border-width:1px;
+    border-style:solid;
     display:flex;
     flex:1;
     align-content:stretch;
     flex-wrap:wrap;
-
-/*
-    width:100%;
-    align-content:stretch;
-*/
 }
 
 div.sudoku-box-group-row{
@@ -28,7 +31,31 @@ div.sudoku-box-group-row{
     width:100%;
 }
 
+div.sudoku-box{
+    position:relative;
+    display:flex;
+    align-content:stretch;
+    flex:1;
+    border-width:1px;
+    border-style:solid;
+}
 
+input.sudoku-input{
+    background-color:transparent;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display:block;
+    width:100%;
+    height:100%;
+    text-align:center;
+    font-size:inherit;
+    border:none;
+    padding:0 0 0 0;
+    margin:0 0 0 0; 
+}
 
 div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(odd) > div.sudoku-box-group-row:nth-child(odd) > div.sudoku-box:nth-child(odd),
 div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(odd) > div.sudoku-box-group-row:nth-child(even) > div.sudoku-box:nth-child(even),
@@ -38,17 +65,28 @@ div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(
 div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(odd) > div.sudoku-box-group-row:nth-child(even) > div.sudoku-box:nth-child(odd),
 div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(even) > div.sudoku-box-group-row:nth-child(odd) > div.sudoku-box:nth-child(odd),
 div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(even) > div.sudoku-box-group-row:nth-child(even) > div.sudoku-box:nth-child(even){
-    background-color:darkorange;
+    background-color:transparent;
 }
 
-div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(odd){
-    background-color:grey;
+div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(odd) > div.sudoku-box-group-row:nth-child(odd) > div.sudoku-box:nth-child(even),
+div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(odd) > div.sudoku-box-group-row:nth-child(even) > div.sudoku-box:nth-child(odd),
+div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(even) > div.sudoku-box-group-row:nth-child(odd) > div.sudoku-box:nth-child(odd),
+div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(even) > div.sudoku-box-group-row:nth-child(even) > div.sudoku-box:nth-child(even),
+div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(odd) > div.sudoku-box-group-row:nth-child(odd) > div.sudoku-box:nth-child(odd),
+div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(odd) > div.sudoku-box-group-row:nth-child(even) > div.sudoku-box:nth-child(even),
+div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(even) > div.sudoku-box-group-row:nth-child(odd) > div.sudoku-box:nth-child(even),
+div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(even) > div.sudoku-box-group-row:nth-child(even) > div.sudoku-box:nth-child(odd){
+    background-color:yellow;
 }
 
+div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(odd),
 div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(even){
     background-color:grey;
 }
 
-div.sudoku-box{
-    flex:1;
+div.sudoku-square-group-row:nth-child(odd) > div.sudoku-square-group:nth-child(even),
+div.sudoku-square-group-row:nth-child(even) > div.sudoku-square-group:nth-child(odd){
+    background-color:green;
 }
+
+
